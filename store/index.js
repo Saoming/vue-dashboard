@@ -1,50 +1,23 @@
 export const strict = true
 
-// state
 const state = () => ({
   packages_list: [],
   viewPackages: 'default',
 })
 
-// getters
 const getters = {}
 
-// actions
+// async
+const actions = {
 
-const actions = {}
 
-//mutations
+}
+
+// synchronous
 const mutations = {
-  // set
-  setPackages(state) {
 
-  },
-
-  updatePackages_field(state) {
-
-  },
-
-  addPackages(state, customer_name, package_description, package_type, pieces, package_cost, status, merchant, delivery_company, tracking_number, weight, created_by, print_label, notify_customer, package_image, date_added, date_update){
-    state.packages_list.push({
-      customer_name,
-      package_description,
-      customer_name,
-      package_description,
-      package_type,
-      pieces,
-      package_cost,
-      status,
-      merchant,
-      delivery_company,
-      tracking_number,
-      weight,
-      created_by,
-      print_label,
-      notify_customer,
-      package_image,
-      date_added,
-      date_update,
-    })
+  addPackages(state, package_info){
+    state.packages_list.push(package_info)
   },
 
   deletePackages(state, { packages_list }){

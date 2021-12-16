@@ -13,7 +13,6 @@
                     </svg>
                 </button>
                 <input :placeholder="`${this.$props.placeholderText}`" class="flex-grow focus:outline-none focus:text-darkSlateBlue" value="">
-
             </div>
         </div>
     </form>

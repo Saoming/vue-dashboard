@@ -17,6 +17,9 @@ module.exports = {
         whiteSmoke: '#f5f5f5',
         silver: '#c6c7c7',
         gainsboro: '#e3e3e4'
+      },
+      minWidth: {
+        '300': '300px'
       }
     },
   },
